@@ -16,7 +16,7 @@ export default function Login() {
     setError('');
 
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/login', form);
+      const res = await axios.post('https://ex9new.onrender.com/', form);
       localStorage.setItem('user', JSON.stringify(res.data.user));
       alert('Login successful!');
       navigate('/dashboard');
