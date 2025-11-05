@@ -32,7 +32,7 @@ export default function Register() {
 
     try {
       // Send data to backend API
-      await axios.post('http://localhost:5000/api/auth/register', form);
+      await axios.post('https://ex9new.onrender.com/', form);
       alert('Registration successful! Please login.');
       navigate('/login');
     } catch (err) {
